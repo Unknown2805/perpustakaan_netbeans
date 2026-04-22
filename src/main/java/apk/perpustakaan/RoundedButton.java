@@ -4,6 +4,11 @@ import javax.swing.*;
 import java.awt.*;
 
 public class RoundedButton extends JButton {
+    
+    //no argument class biar bisa ditambah jadi palete
+    public RoundedButton() {
+        this("Button"); // Calls the other constructor with default text
+    }
 
     public RoundedButton(String text) {
         super(text);
