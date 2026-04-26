@@ -84,9 +84,6 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Ahmad Faisal\Documents\NetBeansProjects\perpustakaan_netbeans\src\main\Resources\Assets\house (1).png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Dashboard"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -118,9 +115,6 @@
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Ahmad Faisal\Documents\NetBeansProjects\perpustakaan_netbeans\src\main\Resources\Assets\credit-card.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Transaksi"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -155,9 +149,6 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Ahmad Faisal\Documents\NetBeansProjects\perpustakaan_netbeans\src\main\Resources\Assets\book-open.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Buku"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -187,9 +178,6 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Ahmad Faisal\Documents\NetBeansProjects\perpustakaan_netbeans\src\main\Resources\Assets\users-three.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="User Manage"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -214,9 +202,6 @@
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Ahmad Faisal\Documents\NetBeansProjects\perpustakaan_netbeans\src\main\Resources\Assets\power.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Logout"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -325,11 +310,6 @@
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel17">
-                  <Properties>
-                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="2" name="C:\Users\Ahmad Faisal\Documents\NetBeansProjects\perpustakaan_netbeans\src\main\Resources\Assets\Screenshot 2026-04-24 174558.png"/>
-                    </Property>
-                  </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="10" y="40" width="50" height="60"/>
@@ -439,11 +419,6 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel16">
-                  <Properties>
-                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="2" name="C:\Users\Ahmad Faisal\Documents\NetBeansProjects\perpustakaan_netbeans\src\main\Resources\Assets\Screenshot 2026-04-24 174923.png"/>
-                    </Property>
-                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="jTextField3">
                   <Properties>
@@ -540,11 +515,6 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel18">
-                  <Properties>
-                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="2" name="C:\Users\Ahmad Faisal\Documents\NetBeansProjects\perpustakaan_netbeans\src\main\Resources\Assets\Screenshot 2026-04-24 175154.png"/>
-                    </Property>
-                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="jTextField4">
                   <Properties>
@@ -647,11 +617,6 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel20">
-                  <Properties>
-                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="2" name="C:\Users\Ahmad Faisal\Documents\NetBeansProjects\perpustakaan_netbeans\src\main\Resources\Assets\Screenshot 2026-04-24 175445.png"/>
-                    </Property>
-                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="jTextField5">
                   <Properties>
@@ -745,11 +710,6 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel19">
-                  <Properties>
-                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="2" name="C:\Users\Ahmad Faisal\Documents\NetBeansProjects\perpustakaan_netbeans\src\main\Resources\Assets\Screenshot 2026-04-24 175543.png"/>
-                    </Property>
-                  </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="jTextField6">
                   <Properties>
@@ -819,11 +779,6 @@
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel21">
-                  <Properties>
-                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="2" name="C:\Users\Ahmad Faisal\Documents\NetBeansProjects\perpustakaan_netbeans\src\main\Resources\Assets\Screenshot 2026-04-24 175628.png"/>
-                    </Property>
-                  </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="10" y="40" width="-1" height="-1"/>
@@ -1122,7 +1077,7 @@
                                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="jTextField9" pref="54" max="32767" attributes="0"/>
+                                      <Component id="jTextField9" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                                   <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
@@ -1147,11 +1102,6 @@
                         <Component class="javax.swing.JLabel" name="jLabel35">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel36">
-                          <Properties>
-                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="2" name="C:\Users\Ahmad Faisal\Documents\NetBeansProjects\perpustakaan_netbeans\src\main\Resources\Assets\file-text.png"/>
-                            </Property>
-                          </Properties>
                         </Component>
                         <Component class="javax.swing.JTextField" name="jTextField9">
                           <Properties>
@@ -1236,11 +1186,6 @@
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel38">
-                          <Properties>
-                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="2" name="C:\Users\Ahmad Faisal\Documents\NetBeansProjects\perpustakaan_netbeans\src\main\Resources\Assets\Screenshot 2026-04-24 175154.png"/>
-                            </Property>
-                          </Properties>
                         </Component>
                         <Component class="javax.swing.JTextField" name="jTextField10">
                           <Properties>
@@ -1302,7 +1247,7 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
                                           <Component id="jLabel37" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="11" max="32767" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                       </Group>
                                       <Component id="jTextField11" max="32767" attributes="0"/>
                                   </Group>
@@ -1325,11 +1270,6 @@
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel37">
-                          <Properties>
-                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="2" name="C:\Users\Ahmad Faisal\Documents\NetBeansProjects\perpustakaan_netbeans\src\main\Resources\Assets\Screenshot 2026-04-24 175445.png"/>
-                            </Property>
-                          </Properties>
                         </Component>
                         <Component class="javax.swing.JTextField" name="jTextField11">
                           <Properties>
@@ -1398,11 +1338,6 @@
                           </Constraints>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel41">
-                          <Properties>
-                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="2" name="C:\Users\Ahmad Faisal\Documents\NetBeansProjects\perpustakaan_netbeans\src\main\Resources\Assets\arrow-counter-clockwise (1).png"/>
-                            </Property>
-                          </Properties>
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                               <AbsoluteConstraints x="20" y="60" width="-1" height="-1"/>
