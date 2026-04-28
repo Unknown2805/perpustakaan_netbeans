@@ -3,11 +3,11 @@ package apk.perpustakaan;
 import java.awt.*;
 import javax.swing.JFrame;
 
-public class LOGIN extends javax.swing.JFrame {
+public class Login extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(LOGIN.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Login.class.getName());
 
-    public LOGIN() {
+    public Login() {
         initComponents();
         setLocationRelativeTo(null);
         setResizable(false);
@@ -50,6 +50,7 @@ public class LOGIN extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        roundedButton21 = new apk.perpustakaan.RoundedButton2();
         jPanel3 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -113,6 +114,8 @@ public class LOGIN extends javax.swing.JFrame {
         });
         jButton3.addActionListener(this::jButton3ActionPerformed);
 
+        roundedButton21.setText("roundedButton21");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -137,6 +140,10 @@ public class LOGIN extends javax.swing.JFrame {
                 .addGap(105, 105, 105)
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(roundedButton21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(66, 66, 66))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -153,7 +160,9 @@ public class LOGIN extends javax.swing.JFrame {
                 .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton3)
-                .addGap(73, 73, 73)
+                .addGap(32, 32, 32)
+                .addComponent(roundedButton21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
                     .addComponent(jButton2))
@@ -175,6 +184,7 @@ public class LOGIN extends javax.swing.JFrame {
         jLabel7.setText("Library");
         jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, -1));
 
+        cover.setIcon(new javax.swing.ImageIcon("C:\\Users\\RedmiBook 15\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\Assets\\cover.jpeg")); // NOI18N
         cover.setText("    ");
         jPanel3.add(cover, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 360, 400));
 
@@ -242,7 +252,7 @@ public class LOGIN extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new LOGIN().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new Login().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -260,5 +270,6 @@ public class LOGIN extends javax.swing.JFrame {
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JTextField jTextField1;
+    private apk.perpustakaan.RoundedButton2 roundedButton21;
     // End of variables declaration//GEN-END:variables
 }
