@@ -109,38 +109,38 @@ public class SignUp extends javax.swing.JFrame {
 
         jLabel2.setText("Username");
         jLabel2.setPreferredSize(new java.awt.Dimension(80, 25));
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 60, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 260, -1));
 
         jTextField1.addActionListener(this::jTextField1ActionPerformed);
-        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, 260, -1));
+        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, 260, -1));
 
         jLabel3.setText("Email");
         jLabel3.setPreferredSize(new java.awt.Dimension(80, 25));
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 30, -1));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 260, -1));
 
         jPasswordField1.addActionListener(this::jPasswordField1ActionPerformed);
-        jPanel2.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 260, -1));
+        jPanel2.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, 260, -1));
 
         jLabel5.setText("Password");
         jLabel5.setPreferredSize(new java.awt.Dimension(80, 25));
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, 50, -1));
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 260, -1));
 
         jTextField2.addActionListener(this::jTextField2ActionPerformed);
-        jPanel2.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 260, -1));
+        jPanel2.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, 260, -1));
 
         jLabel7.setText("Konfirmasi Password");
         jLabel7.setPreferredSize(new java.awt.Dimension(80, 25));
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 110, -1));
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 260, -1));
 
         jPasswordField2.addActionListener(this::jPasswordField2ActionPerformed);
-        jPanel2.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 260, -1));
+        jPanel2.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 260, -1));
 
         jLabel9.setText("Nama Lengkap");
         jLabel9.setPreferredSize(new java.awt.Dimension(80, 25));
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, -1, -1));
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 260, -1));
 
         jTextField3.addActionListener(this::jTextField3ActionPerformed);
-        jPanel2.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 260, -1));
+        jPanel2.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, 260, -1));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 450));
 
