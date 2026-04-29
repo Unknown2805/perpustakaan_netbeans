@@ -127,7 +127,6 @@ public class tambahtransaksi extends javax.swing.JDialog {
         tglkembali.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel3.add(tglkembali);
 
-        tdenda.setBackground(new java.awt.Color(255, 255, 255));
         tdenda.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         tdenda.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         tdenda.setName(""); // NOI18N
@@ -254,8 +253,8 @@ public class tambahtransaksi extends javax.swing.JDialog {
     }//GEN-LAST:event_tdendaActionPerformed
 
     private void roundedButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundedButton21ActionPerformed
-        idtransaksi.setText("");
-    npeminjam.setText("");
+    idtransaksi.setText("");
+    npeminjam.setText("");  
     tdenda.setText("Rp. ");
     tcatatan.setText("");
     combobuku.setSelectedIndex(0);

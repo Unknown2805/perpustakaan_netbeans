@@ -16,7 +16,6 @@ public class Dashboard extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         new RoundedPanel(40);
-        styleComboBox();
         CardLayout cl = (CardLayout) jPanel3.getLayout();
         cl.show(jPanel3, "dashboard");
         
@@ -57,36 +56,54 @@ public class Dashboard extends javax.swing.JFrame {
         centerRenderer.setHorizontalAlignment(SwingConstants.CENTER);
     
         for (int i = 0; i < tabletransaksi.getColumnCount(); i++) {
-        tabletransaksi.getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
+        tabletransaksi.getColumnModel().getColumn(i).setCellRenderer(centerRenderer2);
     }
+        
+        tablebuku.setBorder(null);
+        tablebuku.setShowGrid(false);
+        tablebuku.setIntercellSpacing(new Dimension(0, 0));
+        tablebuku.setBackground(Color.WHITE);
+        jScrollPane3.setBorder(null);
+        jScrollPane3.setViewportBorder(null);
+        jScrollPane3.getViewport().setBackground(Color.WHITE);
+        tablebuku.getTableHeader().setBorder(null);
+        tablebuku.getTableHeader().setBackground(Color.WHITE);
+        tablebuku.setRowHeight(35);
+        tablebuku.setSelectionBackground(new Color(220, 240, 255));
+        tablebuku.setSelectionForeground(Color.BLACK);
+        DefaultTableCellRenderer centerRenderer3 = new DefaultTableCellRenderer();
+        centerRenderer.setHorizontalAlignment(SwingConstants.CENTER);
     
+        for (int i = 0; i < tablebuku.getColumnCount(); i++) {
+        tablebuku.getColumnModel().getColumn(i).setCellRenderer(centerRenderer3);
+  
+        }
+        
+        tableuser.setBorder(null);
+        tableuser.setShowGrid(false);
+        tableuser.setIntercellSpacing(new Dimension(0, 0));
+        tableuser.setBackground(Color.WHITE);
+        jScrollPane4.setBorder(null);
+        jScrollPane4.setViewportBorder(null);
+        jScrollPane4.getViewport().setBackground(Color.WHITE);
+        tableuser.getTableHeader().setBorder(null);
+        tableuser.getTableHeader().setBackground(Color.WHITE);
+        tableuser.setRowHeight(35);
+        tableuser.setSelectionBackground(new Color(220, 240, 255));
+        tableuser.setSelectionForeground(Color.BLACK);
+        DefaultTableCellRenderer centerRenderer4 = new DefaultTableCellRenderer();
+        centerRenderer.setHorizontalAlignment(SwingConstants.CENTER);
     
+        for (int i = 0; i < tablebuku.getColumnCount(); i++) {
+        tablebuku.getColumnModel().getColumn(i).setCellRenderer(centerRenderer4);
+  
+        }
     ((DefaultTableCellRenderer)tabletransaksi.getTableHeader().getDefaultRenderer())
         .setHorizontalAlignment(SwingConstants.CENTER);
 
 
-        jDateChooser1.setFont(new Font("Segoe UI", Font.PLAIN, 13));
-        jDateChooser1.setBackground(Color.WHITE);
-        jDateChooser1.setBorder(null);
-        jDateChooser1.setDateFormatString("dd MMM yyyy");
-        
-        
-    }
-        private void styleComboBox() {
-        jComboBox1.setBackground(Color.WHITE);
-        jComboBox1.setForeground(Color.BLACK);
-        jComboBox1.setFont(new Font("Segoe UI", Font.PLAIN, 13));
-        jComboBox1.setBorder(null);
-
-        jComboBox2.setBackground(Color.WHITE);
-        jComboBox2.setForeground(Color.BLACK);
-        jComboBox2.setFont(new Font("Segoe UI", Font.PLAIN, 13));
-        jComboBox2.setBorder(null);
-       
-        
-        DefaultTableModel model = (DefaultTableModel) tabletransaksi.getModel();
-    // model.addRow(new Object[]{"1", "TRX-001", "25 Apr 2026", "Ahmad", "Laskar Pelangi", ...});
-}
+         
+      }
 
 // Method untuk membuka Dialog Tambah Transaksi
 private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
@@ -175,25 +192,53 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel41 = new javax.swing.JLabel();
         jTextField12 = new javax.swing.JTextField();
         jPanel7 = new javax.swing.JPanel();
-        roundedPanel12 = new apk.perpustakaan.RoundedPanel();
-        jPanel8 = new javax.swing.JPanel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jPanel9 = new javax.swing.JPanel();
-        jTextField7 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        roundedButton22 = new apk.perpustakaan.RoundedButton2();
         jPanel10 = new javax.swing.JPanel();
         roundedPanel14 = new apk.perpustakaan.RoundedPanel();
         jLabel34 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tabletransaksi = new javax.swing.JTable();
         buku = new javax.swing.JPanel();
+        jPanel11 = new javax.swing.JPanel();
+        roundedPanel13 = new apk.perpustakaan.RoundedPanel();
+        roundedButton21 = new apk.perpustakaan.RoundedButton2();
+        jLabel42 = new javax.swing.JLabel();
+        jTextField8 = new javax.swing.JTextField();
+        jPanel12 = new javax.swing.JPanel();
+        roundedPanel16 = new apk.perpustakaan.RoundedPanel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        roundedPanel18 = new apk.perpustakaan.RoundedPanel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jPanel13 = new javax.swing.JPanel();
+        roundedPanel15 = new apk.perpustakaan.RoundedPanel();
+        jLabel43 = new javax.swing.JLabel();
+        jPanel14 = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        tablebuku = new javax.swing.JTable();
         user = new javax.swing.JPanel();
+        jPanel15 = new javax.swing.JPanel();
+        roundedPanel17 = new apk.perpustakaan.RoundedPanel();
+        roundedButton23 = new apk.perpustakaan.RoundedButton2();
+        jLabel46 = new javax.swing.JLabel();
+        jTextField13 = new javax.swing.JTextField();
+        jPanel16 = new javax.swing.JPanel();
+        roundedPanel19 = new apk.perpustakaan.RoundedPanel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        roundedPanel20 = new apk.perpustakaan.RoundedPanel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jPanel17 = new javax.swing.JPanel();
+        roundedPanel21 = new apk.perpustakaan.RoundedPanel();
+        jLabel53 = new javax.swing.JLabel();
+        jPanel18 = new javax.swing.JPanel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        tableuser = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1080, 720));
@@ -205,7 +250,7 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 3840, Short.MAX_VALUE)
+            .addGap(0, 2841, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -221,6 +266,7 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jButton1.setBackground(new java.awt.Color(0, 51, 102));
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\house (1).png")); // NOI18N
         jButton1.setText("Dashboard");
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
@@ -238,6 +284,7 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jButton2.setBackground(new java.awt.Color(0, 51, 102));
         jButton2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\credit-card.png")); // NOI18N
         jButton2.setText("Transaksi");
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
@@ -256,6 +303,7 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jButton3.setBackground(new java.awt.Color(0, 51, 102));
         jButton3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\book-open.png")); // NOI18N
         jButton3.setText("Buku");
         jButton3.setBorder(null);
         jButton3.setBorderPainted(false);
@@ -263,21 +311,25 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton3.setFocusPainted(false);
         jButton3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton3.addActionListener(this::jButton3ActionPerformed);
         jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 70, -1));
 
         jButton4.setBackground(new java.awt.Color(0, 51, 102));
         jButton4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\users-three.png")); // NOI18N
         jButton4.setText("User Manage");
         jButton4.setBorder(null);
         jButton4.setBorderPainted(false);
         jButton4.setContentAreaFilled(false);
         jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton4.setFocusPainted(false);
+        jButton4.addActionListener(this::jButton4ActionPerformed);
         jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
 
         jButton5.setBackground(new java.awt.Color(0, 51, 102));
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\power.png")); // NOI18N
         jButton5.setText("Logout");
         jButton5.setBorder(null);
         jButton5.setBorderPainted(false);
@@ -312,6 +364,8 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel8.setText("Buku Terdaftar");
         jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         roundedPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, -1, -1));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 174558.png")); // NOI18N
         roundedPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 50, 60));
 
         jTextField2.setEditable(false);
@@ -336,6 +390,8 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel9.setText("Anggota Aktif");
         jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
+        jLabel16.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 174923.png")); // NOI18N
+
         jTextField3.setEditable(false);
         jTextField3.setBackground(new java.awt.Color(255, 255, 255));
         jTextField3.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -349,18 +405,17 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         roundedPanel2Layout.setHorizontalGroup(
             roundedPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(roundedPanel2Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel16)
+                .addGap(28, 28, 28)
+                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(77, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, roundedPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(roundedPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel9)
-                    .addGroup(roundedPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(roundedPanel2Layout.createSequentialGroup()
-                            .addGap(74, 74, 74)
-                            .addComponent(jLabel3))
-                        .addGroup(roundedPanel2Layout.createSequentialGroup()
-                            .addGap(14, 14, 14)
-                            .addComponent(jLabel16)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(80, Short.MAX_VALUE))
+                    .addComponent(jLabel3))
+                .addGap(66, 66, 66))
         );
         roundedPanel2Layout.setVerticalGroup(
             roundedPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -373,9 +428,9 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 55, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel9)
-                .addGap(18, 18, 18))
+                .addGap(24, 24, 24))
         );
 
         dashboard.add(roundedPanel2);
@@ -390,6 +445,8 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel10.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jLabel10.setText("Orang Sedang Meminjam");
         jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 175154.png")); // NOI18N
 
         jTextField4.setEditable(false);
         jTextField4.setBackground(new java.awt.Color(255, 255, 255));
@@ -444,6 +501,8 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel11.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jLabel11.setText("Buku Keluar");
         jLabel11.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+
+        jLabel20.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 175445.png")); // NOI18N
 
         jTextField5.setEditable(false);
         jTextField5.setBackground(new java.awt.Color(255, 255, 255));
@@ -502,6 +561,8 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel12.setText("Buku Kembali");
         jLabel12.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
+        jLabel19.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 175543.png")); // NOI18N
+
         jTextField6.setEditable(false);
         jTextField6.setBackground(new java.awt.Color(255, 255, 255));
         jTextField6.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -514,18 +575,18 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         roundedPanel5.setLayout(roundedPanel5Layout);
         roundedPanel5Layout.setHorizontalGroup(
             roundedPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(roundedPanel5Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jLabel19)
-                .addGap(21, 21, 21)
-                .addGroup(roundedPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel12))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, roundedPanel5Layout.createSequentialGroup()
                 .addContainerGap(36, Short.MAX_VALUE)
                 .addComponent(jLabel6)
                 .addGap(33, 33, 33))
+            .addGroup(roundedPanel5Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel19)
+                .addGap(18, 18, 18)
+                .addGroup(roundedPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel12)
+                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         roundedPanel5Layout.setVerticalGroup(
             roundedPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -536,9 +597,9 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
                 .addGroup(roundedPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel19)
                     .addComponent(jTextField6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel12)
-                .addGap(22, 22, 22))
+                .addGap(21, 21, 21))
         );
 
         dashboard.add(roundedPanel5);
@@ -556,6 +617,8 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel13.setText("Buku Terlambat");
         jLabel13.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         roundedPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 108, -1, -1));
+
+        jLabel21.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 175628.png")); // NOI18N
         roundedPanel6.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
 
         jTextField1.setEditable(false);
@@ -584,26 +647,11 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
 
             },
             new String [] {
-                "No", "Judul Buku", "Peminjam", "Tanggal Pinjam", "Status"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
-            };
 
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
             }
-        });
+        ));
         jTable1.setOpaque(false);
         jScrollPane1.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(0).setResizable(false);
-            jTable1.getColumnModel().getColumn(1).setResizable(false);
-            jTable1.getColumnModel().getColumn(2).setResizable(false);
-            jTable1.getColumnModel().getColumn(3).setResizable(false);
-            jTable1.getColumnModel().getColumn(4).setResizable(false);
-        }
 
         javax.swing.GroupLayout roundedPanel7Layout = new javax.swing.GroupLayout(roundedPanel7);
         roundedPanel7.setLayout(roundedPanel7Layout);
@@ -676,6 +724,8 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
 
         jLabel23.setText("Semua Transaksi");
 
+        jLabel36.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\file-text.png")); // NOI18N
+
         jTextField9.setEditable(false);
         jTextField9.setBackground(new java.awt.Color(255, 255, 255));
         jTextField9.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -696,13 +746,12 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
                         .addGap(58, 58, 58)
                         .addGroup(roundedPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel23)
-                            .addComponent(jLabel22)))
+                            .addComponent(jLabel22)
+                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(roundedPanel8Layout.createSequentialGroup()
                         .addGap(16, 16, 16)
-                        .addComponent(jLabel36)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(741, Short.MAX_VALUE))
+                        .addComponent(jLabel36)))
+                .addContainerGap(491, Short.MAX_VALUE))
         );
         roundedPanel8Layout.setVerticalGroup(
             roundedPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -730,6 +779,8 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
 
         jLabel25.setText("Sedang Dipinjam");
 
+        jLabel38.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 175154.png")); // NOI18N
+
         jTextField10.setEditable(false);
         jTextField10.setBackground(new java.awt.Color(255, 255, 255));
         jTextField10.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -745,16 +796,18 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
             .addGroup(roundedPanel9Layout.createSequentialGroup()
                 .addGroup(roundedPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(roundedPanel9Layout.createSequentialGroup()
-                        .addGap(56, 56, 56)
-                        .addGroup(roundedPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel24)
-                            .addComponent(jLabel25)))
-                    .addGroup(roundedPanel9Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel38)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(743, Short.MAX_VALUE))
+                        .addComponent(jLabel38))
+                    .addGroup(roundedPanel9Layout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addGroup(roundedPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(roundedPanel9Layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(roundedPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel24)
+                                .addComponent(jLabel25)))))
+                .addContainerGap(493, Short.MAX_VALUE))
         );
         roundedPanel9Layout.setVerticalGroup(
             roundedPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -764,7 +817,7 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(roundedPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(roundedPanel9Layout.createSequentialGroup()
-                        .addGap(0, 16, Short.MAX_VALUE)
+                        .addGap(0, 5, Short.MAX_VALUE)
                         .addComponent(jLabel38))
                     .addComponent(jTextField10))
                 .addGap(14, 14, 14)
@@ -779,6 +832,8 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel26.setText("Dipinjam Hari Ini");
 
         jLabel27.setText("Transaksi Hari Ini");
+
+        jLabel37.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 175445.png")); // NOI18N
 
         jTextField11.setEditable(false);
         jTextField11.setBackground(new java.awt.Color(255, 255, 255));
@@ -798,13 +853,15 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
                         .addGap(51, 51, 51)
                         .addGroup(roundedPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel27)
-                            .addComponent(jLabel26)))
+                            .addGroup(roundedPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(roundedPanel10Layout.createSequentialGroup()
+                                    .addGap(6, 6, 6)
+                                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jLabel26))))
                     .addGroup(roundedPanel10Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel37)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(752, Short.MAX_VALUE))
+                        .addComponent(jLabel37)))
+                .addContainerGap(502, Short.MAX_VALUE))
         );
         roundedPanel10Layout.setVerticalGroup(
             roundedPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -834,6 +891,8 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         roundedPanel11.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 116, -1, -1));
         roundedPanel11.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 62, -1, -1));
         roundedPanel11.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 62, -1, -1));
+
+        jLabel41.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\arrow-counter-clockwise (1).png")); // NOI18N
         roundedPanel11.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
 
         jTextField12.setEditable(false);
@@ -851,70 +910,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
 
         jPanel7.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 20, 10, 20));
         jPanel7.setLayout(new java.awt.BorderLayout(0, 10));
-
-        roundedPanel12.setBackground(new java.awt.Color(255, 255, 255));
-        roundedPanel12.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 20, 10, 20));
-        roundedPanel12.setPreferredSize(new java.awt.Dimension(2657, 100));
-        roundedPanel12.setLayout(new java.awt.BorderLayout());
-
-        jPanel8.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel8.setPreferredSize(new java.awt.Dimension(2577, 25));
-        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel30.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel30.setText("Cari Transaksi");
-        jPanel8.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, -1));
-
-        jLabel31.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel31.setText("Jenis Transaksi");
-        jPanel8.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 0, -1, -1));
-
-        jLabel32.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel32.setText("Status");
-        jPanel8.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 0, -1, -1));
-
-        jLabel33.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel33.setText("Tanggal");
-        jPanel8.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 0, -1, -1));
-
-        roundedPanel12.add(jPanel8, java.awt.BorderLayout.NORTH);
-
-        jPanel9.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel9.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 40, 10));
-
-        jTextField7.setText("Cari");
-        jTextField7.setPreferredSize(new java.awt.Dimension(160, 22));
-        jTextField7.addActionListener(this::jTextField7ActionPerformed);
-        jPanel9.add(jTextField7);
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Semua Jenis", "Peminjaman", "Pengembalian" }));
-        jComboBox1.setPreferredSize(new java.awt.Dimension(150, 22));
-        jPanel9.add(jComboBox1);
-
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Semua Status", "Dipinjam", "Dikembalikkan", "Terlambat" }));
-        jComboBox2.setPreferredSize(new java.awt.Dimension(130, 22));
-        jPanel9.add(jComboBox2);
-
-        jDateChooser1.setPreferredSize(new java.awt.Dimension(120, 22));
-        jPanel9.add(jDateChooser1);
-
-        roundedButton22.setText("Filter");
-        roundedButton22.setPreferredSize(new java.awt.Dimension(70, 30));
-        roundedButton22.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                roundedButton22MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                roundedButton22MouseExited(evt);
-            }
-        });
-        roundedButton22.addActionListener(this::roundedButton22ActionPerformed);
-        jPanel9.add(roundedButton22);
-
-        roundedPanel12.add(jPanel9, java.awt.BorderLayout.CENTER);
-
-        jPanel7.add(roundedPanel12, java.awt.BorderLayout.NORTH);
 
         jPanel10.setLayout(new java.awt.BorderLayout());
         jPanel7.add(jPanel10, java.awt.BorderLayout.PAGE_END);
@@ -969,31 +964,373 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
 
         jPanel3.add(transaksi, "transaksi");
 
-        javax.swing.GroupLayout bukuLayout = new javax.swing.GroupLayout(buku);
-        buku.setLayout(bukuLayout);
-        bukuLayout.setHorizontalGroup(
-            bukuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 3700, Short.MAX_VALUE)
+        buku.setLayout(new java.awt.BorderLayout());
+
+        jPanel11.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 20, 10, 20));
+        jPanel11.setLayout(new java.awt.BorderLayout());
+
+        roundedPanel13.setBackground(new java.awt.Color(255, 255, 255));
+        roundedPanel13.setPreferredSize(new java.awt.Dimension(700, 100));
+
+        roundedButton21.setText("+ Tambah buku baru");
+        roundedButton21.addActionListener(this::roundedButton21ActionPerformed);
+
+        jLabel42.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel42.setText("Cari Buku");
+
+        jTextField8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        jTextField8.setName(""); // NOI18N
+        jTextField8.addActionListener(this::jTextField8ActionPerformed);
+
+        javax.swing.GroupLayout roundedPanel13Layout = new javax.swing.GroupLayout(roundedPanel13);
+        roundedPanel13.setLayout(roundedPanel13Layout);
+        roundedPanel13Layout.setHorizontalGroup(
+            roundedPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundedPanel13Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(roundedPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(roundedPanel13Layout.createSequentialGroup()
+                        .addComponent(jTextField8, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(roundedButton21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32))
+                    .addGroup(roundedPanel13Layout.createSequentialGroup()
+                        .addComponent(jLabel42)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
-        bukuLayout.setVerticalGroup(
-            bukuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 701, Short.MAX_VALUE)
+        roundedPanel13Layout.setVerticalGroup(
+            roundedPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundedPanel13Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel42)
+                .addGap(2, 2, 2)
+                .addGroup(roundedPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(roundedButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        jPanel3.add(buku, "card2");
+        jPanel11.add(roundedPanel13, java.awt.BorderLayout.WEST);
 
-        javax.swing.GroupLayout userLayout = new javax.swing.GroupLayout(user);
-        user.setLayout(userLayout);
-        userLayout.setHorizontalGroup(
-            userLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 3700, Short.MAX_VALUE)
+        buku.add(jPanel11, java.awt.BorderLayout.PAGE_START);
+
+        jPanel12.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 20, 10, 20));
+        jPanel12.setPreferredSize(new java.awt.Dimension(182, 681));
+        jPanel12.setRequestFocusEnabled(false);
+        jPanel12.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 10));
+
+        roundedPanel16.setBackground(new java.awt.Color(255, 255, 255));
+        roundedPanel16.setPreferredSize(new java.awt.Dimension(170, 150));
+
+        jLabel44.setText("Total Judul");
+
+        jLabel45.setText("Judul Buku Terdaftar");
+
+        jLabel30.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 174558.png")); // NOI18N
+
+        javax.swing.GroupLayout roundedPanel16Layout = new javax.swing.GroupLayout(roundedPanel16);
+        roundedPanel16.setLayout(roundedPanel16Layout);
+        roundedPanel16Layout.setHorizontalGroup(
+            roundedPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, roundedPanel16Layout.createSequentialGroup()
+                .addContainerGap(35, Short.MAX_VALUE)
+                .addComponent(jLabel45)
+                .addGap(28, 28, 28))
+            .addGroup(roundedPanel16Layout.createSequentialGroup()
+                .addGroup(roundedPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(roundedPanel16Layout.createSequentialGroup()
+                        .addGap(54, 54, 54)
+                        .addComponent(jLabel44))
+                    .addGroup(roundedPanel16Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel30)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        userLayout.setVerticalGroup(
-            userLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 701, Short.MAX_VALUE)
+        roundedPanel16Layout.setVerticalGroup(
+            roundedPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundedPanel16Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel44)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
+                .addComponent(jLabel30)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel45)
+                .addGap(18, 18, 18))
         );
 
-        jPanel3.add(user, "card2");
+        jPanel12.add(roundedPanel16);
+
+        roundedPanel18.setBackground(new java.awt.Color(255, 255, 255));
+        roundedPanel18.setPreferredSize(new java.awt.Dimension(170, 150));
+
+        jLabel48.setText("Jumlah Stok Buku");
+
+        jLabel49.setText("Total Stok");
+
+        jLabel31.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\file-text.png")); // NOI18N
+
+        javax.swing.GroupLayout roundedPanel18Layout = new javax.swing.GroupLayout(roundedPanel18);
+        roundedPanel18.setLayout(roundedPanel18Layout);
+        roundedPanel18Layout.setHorizontalGroup(
+            roundedPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, roundedPanel18Layout.createSequentialGroup()
+                .addContainerGap(40, Short.MAX_VALUE)
+                .addComponent(jLabel48)
+                .addGap(37, 37, 37))
+            .addGroup(roundedPanel18Layout.createSequentialGroup()
+                .addGroup(roundedPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(roundedPanel18Layout.createSequentialGroup()
+                        .addGap(54, 54, 54)
+                        .addComponent(jLabel49))
+                    .addGroup(roundedPanel18Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel31)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        roundedPanel18Layout.setVerticalGroup(
+            roundedPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundedPanel18Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel49)
+                .addGap(21, 21, 21)
+                .addComponent(jLabel31)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addComponent(jLabel48)
+                .addGap(18, 18, 18))
+        );
+
+        jPanel12.add(roundedPanel18);
+
+        buku.add(jPanel12, java.awt.BorderLayout.LINE_END);
+
+        jPanel13.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 20, 10, 20));
+        jPanel13.setLayout(new java.awt.BorderLayout());
+
+        roundedPanel15.setBackground(new java.awt.Color(255, 255, 255));
+        roundedPanel15.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 20, 10, 20));
+        roundedPanel15.setLayout(new java.awt.BorderLayout());
+
+        jLabel43.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel43.setText("Daftar Buku");
+        roundedPanel15.add(jLabel43, java.awt.BorderLayout.PAGE_START);
+
+        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel14.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 20, 10, 20));
+        jPanel14.setLayout(new java.awt.BorderLayout());
+
+        tablebuku.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "No", "Judul Buku", "Kategori", "Pengarang", "Stok"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane3.setViewportView(tablebuku);
+        if (tablebuku.getColumnModel().getColumnCount() > 0) {
+            tablebuku.getColumnModel().getColumn(0).setMinWidth(30);
+            tablebuku.getColumnModel().getColumn(0).setMaxWidth(30);
+        }
+
+        jPanel14.add(jScrollPane3, java.awt.BorderLayout.CENTER);
+
+        roundedPanel15.add(jPanel14, java.awt.BorderLayout.CENTER);
+
+        jPanel13.add(roundedPanel15, java.awt.BorderLayout.CENTER);
+
+        buku.add(jPanel13, java.awt.BorderLayout.CENTER);
+
+        jPanel3.add(buku, "buku");
+
+        user.setLayout(new java.awt.BorderLayout());
+
+        jPanel15.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 20, 10, 20));
+        jPanel15.setLayout(new java.awt.BorderLayout());
+
+        roundedPanel17.setBackground(new java.awt.Color(255, 255, 255));
+        roundedPanel17.setPreferredSize(new java.awt.Dimension(700, 100));
+
+        roundedButton23.setText("+ Tambah User baru");
+        roundedButton23.addActionListener(this::roundedButton23ActionPerformed);
+
+        jLabel46.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel46.setText("Cari User");
+
+        jTextField13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        jTextField13.setName(""); // NOI18N
+        jTextField13.addActionListener(this::jTextField13ActionPerformed);
+
+        javax.swing.GroupLayout roundedPanel17Layout = new javax.swing.GroupLayout(roundedPanel17);
+        roundedPanel17.setLayout(roundedPanel17Layout);
+        roundedPanel17Layout.setHorizontalGroup(
+            roundedPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundedPanel17Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(roundedPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(roundedPanel17Layout.createSequentialGroup()
+                        .addComponent(jTextField13, javax.swing.GroupLayout.DEFAULT_SIZE, 493, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(roundedButton23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32))
+                    .addGroup(roundedPanel17Layout.createSequentialGroup()
+                        .addComponent(jLabel46)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+        );
+        roundedPanel17Layout.setVerticalGroup(
+            roundedPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundedPanel17Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel46)
+                .addGap(2, 2, 2)
+                .addGroup(roundedPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(roundedButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        jPanel15.add(roundedPanel17, java.awt.BorderLayout.WEST);
+
+        user.add(jPanel15, java.awt.BorderLayout.PAGE_START);
+
+        jPanel16.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 20, 10, 20));
+        jPanel16.setPreferredSize(new java.awt.Dimension(182, 681));
+        jPanel16.setRequestFocusEnabled(false);
+        jPanel16.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 10));
+
+        roundedPanel19.setBackground(new java.awt.Color(255, 255, 255));
+        roundedPanel19.setPreferredSize(new java.awt.Dimension(170, 150));
+
+        jLabel47.setText("Total User");
+
+        jLabel50.setText("User Terdaftar");
+
+        jLabel32.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 174923.png")); // NOI18N
+
+        javax.swing.GroupLayout roundedPanel19Layout = new javax.swing.GroupLayout(roundedPanel19);
+        roundedPanel19.setLayout(roundedPanel19Layout);
+        roundedPanel19Layout.setHorizontalGroup(
+            roundedPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundedPanel19Layout.createSequentialGroup()
+                .addGroup(roundedPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(roundedPanel19Layout.createSequentialGroup()
+                        .addGap(54, 54, 54)
+                        .addComponent(jLabel47))
+                    .addGroup(roundedPanel19Layout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addComponent(jLabel50))
+                    .addComponent(jLabel32))
+                .addContainerGap(51, Short.MAX_VALUE))
+        );
+        roundedPanel19Layout.setVerticalGroup(
+            roundedPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundedPanel19Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel47)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel32)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addComponent(jLabel50)
+                .addGap(18, 18, 18))
+        );
+
+        jPanel16.add(roundedPanel19);
+
+        roundedPanel20.setBackground(new java.awt.Color(255, 255, 255));
+        roundedPanel20.setPreferredSize(new java.awt.Dimension(170, 150));
+
+        jLabel51.setText("Anggota Yang Masih Aktif");
+
+        jLabel52.setText("User Active");
+
+        jLabel33.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 174923.png")); // NOI18N
+
+        javax.swing.GroupLayout roundedPanel20Layout = new javax.swing.GroupLayout(roundedPanel20);
+        roundedPanel20.setLayout(roundedPanel20Layout);
+        roundedPanel20Layout.setHorizontalGroup(
+            roundedPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundedPanel20Layout.createSequentialGroup()
+                .addGroup(roundedPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(roundedPanel20Layout.createSequentialGroup()
+                        .addGap(54, 54, 54)
+                        .addComponent(jLabel52))
+                    .addGroup(roundedPanel20Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(jLabel51))
+                    .addGroup(roundedPanel20Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel33)))
+                .addContainerGap(17, Short.MAX_VALUE))
+        );
+        roundedPanel20Layout.setVerticalGroup(
+            roundedPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundedPanel20Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel52)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addComponent(jLabel33)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel51)
+                .addGap(18, 18, 18))
+        );
+
+        jPanel16.add(roundedPanel20);
+
+        user.add(jPanel16, java.awt.BorderLayout.LINE_END);
+
+        jPanel17.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 20, 10, 20));
+        jPanel17.setLayout(new java.awt.BorderLayout());
+
+        roundedPanel21.setBackground(new java.awt.Color(255, 255, 255));
+        roundedPanel21.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 20, 10, 20));
+        roundedPanel21.setLayout(new java.awt.BorderLayout());
+
+        jLabel53.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel53.setText("Daftar User");
+        roundedPanel21.add(jLabel53, java.awt.BorderLayout.PAGE_START);
+
+        jPanel18.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel18.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 20, 10, 20));
+        jPanel18.setLayout(new java.awt.BorderLayout());
+
+        tableuser.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "No", "NIK", "Nama Lengkap", "Username", "Status"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane4.setViewportView(tableuser);
+        if (tableuser.getColumnModel().getColumnCount() > 0) {
+            tableuser.getColumnModel().getColumn(0).setMinWidth(30);
+            tableuser.getColumnModel().getColumn(0).setMaxWidth(30);
+        }
+
+        jPanel18.add(jScrollPane4, java.awt.BorderLayout.CENTER);
+
+        roundedPanel21.add(jPanel18, java.awt.BorderLayout.CENTER);
+
+        jPanel17.add(roundedPanel21, java.awt.BorderLayout.CENTER);
+
+        user.add(jPanel17, java.awt.BorderLayout.CENTER);
+
+        jPanel3.add(user, "user");
 
         getContentPane().add(jPanel3, java.awt.BorderLayout.CENTER);
 
@@ -1058,10 +1395,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         btntransaksi.setBackground(new Color(0, 102, 255));
     }//GEN-LAST:event_btntransaksiMouseExited
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
-
     private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField9ActionPerformed
@@ -1083,17 +1416,32 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         dialog.setVisible(true);
     }//GEN-LAST:event_btntransaksiActionPerformed
 
-    private void roundedButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundedButton22ActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+       CardLayout cl = (CardLayout) jPanel3.getLayout();
+       cl.show(jPanel3, "buku");
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_roundedButton22ActionPerformed
+    }//GEN-LAST:event_jTextField8ActionPerformed
 
-    private void roundedButton22MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_roundedButton22MouseEntered
-       roundedButton22.setBackground(new Color(0, 80, 200));
-    }//GEN-LAST:event_roundedButton22MouseEntered
+    private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField13ActionPerformed
 
-    private void roundedButton22MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_roundedButton22MouseExited
-        roundedButton22.setBackground(new Color(0, 102, 255));
-    }//GEN-LAST:event_roundedButton22MouseExited
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        CardLayout cl = (CardLayout) jPanel3.getLayout();
+        cl.show(jPanel3, "user");
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void roundedButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundedButton23ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roundedButton23ActionPerformed
+
+    private void roundedButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundedButton21ActionPerformed
+        tambahbukubaru dialog = new tambahbukubaru(this, true);
+        dialog.setVisible(true);
+    }//GEN-LAST:event_roundedButton21ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1111,9 +1459,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1150,42 +1495,71 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
+    private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
-    private apk.perpustakaan.RoundedButton2 roundedButton22;
+    private apk.perpustakaan.RoundedButton2 roundedButton21;
+    private apk.perpustakaan.RoundedButton2 roundedButton23;
     private apk.perpustakaan.RoundedPanel roundedPanel1;
     private apk.perpustakaan.RoundedPanel roundedPanel10;
     private apk.perpustakaan.RoundedPanel roundedPanel11;
-    private apk.perpustakaan.RoundedPanel roundedPanel12;
+    private apk.perpustakaan.RoundedPanel roundedPanel13;
     private apk.perpustakaan.RoundedPanel roundedPanel14;
+    private apk.perpustakaan.RoundedPanel roundedPanel15;
+    private apk.perpustakaan.RoundedPanel roundedPanel16;
+    private apk.perpustakaan.RoundedPanel roundedPanel17;
+    private apk.perpustakaan.RoundedPanel roundedPanel18;
+    private apk.perpustakaan.RoundedPanel roundedPanel19;
     private apk.perpustakaan.RoundedPanel roundedPanel2;
+    private apk.perpustakaan.RoundedPanel roundedPanel20;
+    private apk.perpustakaan.RoundedPanel roundedPanel21;
     private apk.perpustakaan.RoundedPanel roundedPanel3;
     private apk.perpustakaan.RoundedPanel roundedPanel4;
     private apk.perpustakaan.RoundedPanel roundedPanel5;
@@ -1193,7 +1567,9 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
     private apk.perpustakaan.RoundedPanel roundedPanel7;
     private apk.perpustakaan.RoundedPanel roundedPanel8;
     private apk.perpustakaan.RoundedPanel roundedPanel9;
+    public javax.swing.JTable tablebuku;
     public javax.swing.JTable tabletransaksi;
+    private javax.swing.JTable tableuser;
     private javax.swing.JPanel transaksi;
     private javax.swing.JPanel user;
     // End of variables declaration//GEN-END:variables
