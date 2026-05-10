@@ -57,6 +57,7 @@ public class tambahbukubaru extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
         setPreferredSize(new java.awt.Dimension(567, 400));
+        getContentPane().setLayout(new java.awt.BorderLayout());
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setPreferredSize(new java.awt.Dimension(567, 250));
@@ -80,9 +81,8 @@ public class tambahbukubaru extends javax.swing.JDialog {
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addContainerGap())
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jPanel2.add(jPanel4, java.awt.BorderLayout.PAGE_START);
@@ -97,11 +97,11 @@ public class tambahbukubaru extends javax.swing.JDialog {
         jLabel4.setText("Kategori");
         jPanel5.add(jLabel4);
 
-        jbuku.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jbuku.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jPanel5.add(jbuku);
 
         jkategori.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Komik", "Novel", "Cerpen" }));
-        jkategori.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jkategori.setBorder(null);
         jPanel5.add(jkategori);
 
         jLabel3.setText("Penulis");
@@ -110,10 +110,10 @@ public class tambahbukubaru extends javax.swing.JDialog {
         jLabel5.setText("Penerbit");
         jPanel5.add(jLabel5);
 
-        jpenulis.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jpenulis.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jPanel5.add(jpenulis);
 
-        jpenerbit.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jpenerbit.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jPanel5.add(jpenerbit);
 
         jPanel2.add(jPanel5, java.awt.BorderLayout.CENTER);
@@ -136,8 +136,8 @@ public class tambahbukubaru extends javax.swing.JDialog {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(164, 164, 164)
-                .addComponent(roundedButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(roundedButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(roundedButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(170, Short.MAX_VALUE))
         );

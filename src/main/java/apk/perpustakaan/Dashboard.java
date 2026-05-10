@@ -19,7 +19,39 @@ public class Dashboard extends javax.swing.JFrame {
         CardLayout cl = (CardLayout) jPanel3.getLayout();
         cl.show(jPanel3, "dashboard");
         
-        //Dashboard table 
+        //Image Dashboard
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Screenshot 2026-04-24 174558.png")));
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Screenshot 2026-04-24 174923.png")));
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Screenshot 2026-04-24 175154.png")));
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Screenshot 2026-04-24 175445.png")));
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Screenshot 2026-04-24 174558.png")));
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Screenshot 2026-04-24 175628.png")));
+        
+        //image Transaksi
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/file-text.png")));
+        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Screenshot 2026-04-24 175154.png")));
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Screenshot 2026-04-24 175445.png")));
+        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/arrow-counter-clockwise (1).png")));
+        
+        //image Sidedbar
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/house.png")));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/credit-card.png")));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/book-open.png")));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/users.png")));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/power.png")));
+        
+        //image Buku
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Screenshot 2026-04-24 174558.png")));
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/file-text.png")));
+        
+        //image User Manage
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Screenshot 2026-04-24 174923.png")));
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Screenshot 2026-04-24 174923.png")));
+       
+        
+        
+        
+        
         jTable1.setShowHorizontalLines(false);
         jTable1.setShowVerticalLines(false);
         jTable1.setRowHeight(35);
@@ -188,8 +220,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
-        jLabel40 = new javax.swing.JLabel();
-        jLabel41 = new javax.swing.JLabel();
         jTextField12 = new javax.swing.JTextField();
         jPanel7 = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
@@ -242,6 +272,7 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1080, 720));
+        getContentPane().setLayout(new java.awt.BorderLayout());
 
         jPanel1.setBackground(new java.awt.Color(51, 153, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(752, 60));
@@ -266,7 +297,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jButton1.setBackground(new java.awt.Color(0, 51, 102));
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\house (1).png")); // NOI18N
         jButton1.setText("Dashboard");
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
@@ -284,7 +314,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jButton2.setBackground(new java.awt.Color(0, 51, 102));
         jButton2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\credit-card.png")); // NOI18N
         jButton2.setText("Transaksi");
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
@@ -303,7 +332,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jButton3.setBackground(new java.awt.Color(0, 51, 102));
         jButton3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\book-open.png")); // NOI18N
         jButton3.setText("Buku");
         jButton3.setBorder(null);
         jButton3.setBorderPainted(false);
@@ -317,7 +345,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jButton4.setBackground(new java.awt.Color(0, 51, 102));
         jButton4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\users-three.png")); // NOI18N
         jButton4.setText("User Manage");
         jButton4.setBorder(null);
         jButton4.setBorderPainted(false);
@@ -329,7 +356,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
 
         jButton5.setBackground(new java.awt.Color(0, 51, 102));
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\power.png")); // NOI18N
         jButton5.setText("Logout");
         jButton5.setBorder(null);
         jButton5.setBorderPainted(false);
@@ -344,7 +370,7 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jPanel3.setLayout(new java.awt.CardLayout());
 
         dashboard.setBackground(new java.awt.Color(246, 246, 246));
-        dashboard.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 50, 30));
+        dashboard.setLayout(new java.awt.FlowLayout(0, 50, 30));
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel15.setText("Dashboard");
@@ -364,8 +390,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel8.setText("Buku Terdaftar");
         jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         roundedPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, -1, -1));
-
-        jLabel17.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 174558.png")); // NOI18N
         roundedPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 50, 60));
 
         jTextField2.setEditable(false);
@@ -389,8 +413,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel9.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jLabel9.setText("Anggota Aktif");
         jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-
-        jLabel16.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 174923.png")); // NOI18N
 
         jTextField3.setEditable(false);
         jTextField3.setBackground(new java.awt.Color(255, 255, 255));
@@ -446,8 +468,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel10.setText("Orang Sedang Meminjam");
         jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
-        jLabel18.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 175154.png")); // NOI18N
-
         jTextField4.setEditable(false);
         jTextField4.setBackground(new java.awt.Color(255, 255, 255));
         jTextField4.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -501,8 +521,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel11.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jLabel11.setText("Buku Keluar");
         jLabel11.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-
-        jLabel20.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 175445.png")); // NOI18N
 
         jTextField5.setEditable(false);
         jTextField5.setBackground(new java.awt.Color(255, 255, 255));
@@ -561,8 +579,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel12.setText("Buku Kembali");
         jLabel12.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
-        jLabel19.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 175543.png")); // NOI18N
-
         jTextField6.setEditable(false);
         jTextField6.setBackground(new java.awt.Color(255, 255, 255));
         jTextField6.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -617,8 +633,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel13.setText("Buku Terlambat");
         jLabel13.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         roundedPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 108, -1, -1));
-
-        jLabel21.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 175628.png")); // NOI18N
         roundedPanel6.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
 
         jTextField1.setEditable(false);
@@ -647,7 +661,7 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
 
             },
             new String [] {
-
+                "Title 1", "Title 2", "Title 3"
             }
         ));
         jTable1.setOpaque(false);
@@ -724,8 +738,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
 
         jLabel23.setText("Semua Transaksi");
 
-        jLabel36.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\file-text.png")); // NOI18N
-
         jTextField9.setEditable(false);
         jTextField9.setBackground(new java.awt.Color(255, 255, 255));
         jTextField9.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -779,8 +791,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
 
         jLabel25.setText("Sedang Dipinjam");
 
-        jLabel38.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 175154.png")); // NOI18N
-
         jTextField10.setEditable(false);
         jTextField10.setBackground(new java.awt.Color(255, 255, 255));
         jTextField10.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -832,8 +842,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel26.setText("Dipinjam Hari Ini");
 
         jLabel27.setText("Transaksi Hari Ini");
-
-        jLabel37.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 175445.png")); // NOI18N
 
         jTextField11.setEditable(false);
         jTextField11.setBackground(new java.awt.Color(255, 255, 255));
@@ -889,11 +897,7 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
 
         jLabel29.setText("Transaksi Hari Ini");
         roundedPanel11.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 116, -1, -1));
-        roundedPanel11.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 62, -1, -1));
-        roundedPanel11.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 62, -1, -1));
-
-        jLabel41.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\arrow-counter-clockwise (1).png")); // NOI18N
-        roundedPanel11.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
+        roundedPanel11.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 40, 50));
 
         jTextField12.setEditable(false);
         jTextField12.setBackground(new java.awt.Color(255, 255, 255));
@@ -978,7 +982,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel42.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel42.setText("Cari Buku");
 
-        jTextField8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         jTextField8.setName(""); // NOI18N
         jTextField8.addActionListener(this::jTextField8ActionPerformed);
 
@@ -1017,7 +1020,7 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jPanel12.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 20, 10, 20));
         jPanel12.setPreferredSize(new java.awt.Dimension(182, 681));
         jPanel12.setRequestFocusEnabled(false);
-        jPanel12.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 10));
+        jPanel12.setLayout(new java.awt.FlowLayout(1, 5, 10));
 
         roundedPanel16.setBackground(new java.awt.Color(255, 255, 255));
         roundedPanel16.setPreferredSize(new java.awt.Dimension(170, 150));
@@ -1025,8 +1028,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel44.setText("Total Judul");
 
         jLabel45.setText("Judul Buku Terdaftar");
-
-        jLabel30.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 174558.png")); // NOI18N
 
         javax.swing.GroupLayout roundedPanel16Layout = new javax.swing.GroupLayout(roundedPanel16);
         roundedPanel16.setLayout(roundedPanel16Layout);
@@ -1066,8 +1067,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel48.setText("Jumlah Stok Buku");
 
         jLabel49.setText("Total Stok");
-
-        jLabel31.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\file-text.png")); // NOI18N
 
         javax.swing.GroupLayout roundedPanel18Layout = new javax.swing.GroupLayout(roundedPanel18);
         roundedPanel18.setLayout(roundedPanel18Layout);
@@ -1164,7 +1163,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel46.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel46.setText("Cari User");
 
-        jTextField13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         jTextField13.setName(""); // NOI18N
         jTextField13.addActionListener(this::jTextField13ActionPerformed);
 
@@ -1203,7 +1201,7 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jPanel16.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 20, 10, 20));
         jPanel16.setPreferredSize(new java.awt.Dimension(182, 681));
         jPanel16.setRequestFocusEnabled(false);
-        jPanel16.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 10));
+        jPanel16.setLayout(new java.awt.FlowLayout(1, 5, 10));
 
         roundedPanel19.setBackground(new java.awt.Color(255, 255, 255));
         roundedPanel19.setPreferredSize(new java.awt.Dimension(170, 150));
@@ -1211,8 +1209,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel47.setText("Total User");
 
         jLabel50.setText("User Terdaftar");
-
-        jLabel32.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 174923.png")); // NOI18N
 
         javax.swing.GroupLayout roundedPanel19Layout = new javax.swing.GroupLayout(roundedPanel19);
         roundedPanel19.setLayout(roundedPanel19Layout);
@@ -1249,8 +1245,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
         jLabel51.setText("Anggota Yang Masih Aktif");
 
         jLabel52.setText("User Active");
-
-        jLabel33.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ahmad Faisal\\Documents\\NetBeansProjects\\perpustakaan_netbeans\\src\\main\\resources\\assets\\Screenshot 2026-04-24 174923.png")); // NOI18N
 
         javax.swing.GroupLayout roundedPanel20Layout = new javax.swing.GroupLayout(roundedPanel20);
         roundedPanel20.setLayout(roundedPanel20Layout);
@@ -1493,8 +1487,6 @@ private void btnBukaDialogActionPerformed(java.awt.event.ActionEvent evt) {
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
